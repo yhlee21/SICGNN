@@ -1,0 +1,63 @@
+model:
+  - GraphSAGE_SIR
+device:
+  - cuda:0
+batch_size:
+  - 32
+learning_rate:
+  - 0.01
+  - 0.001
+  - 0.0001
+l2:
+  - 0.
+classifier_epochs:
+  - 1000
+optimizer:
+  - Adam
+scheduler:
+  - null
+loss:
+  - MulticlassClassificationLoss
+gradient_clipping:
+  - null
+early_stopper:
+  -
+    class: Patience
+    args:
+      patience: 500
+      use_loss: False
+  -
+    class: Patience
+    args:
+      patience: 500
+      use_loss: True
+shuffle:
+  - True
+dim_embedding:
+  - 32
+  - 64
+  - 74
+  - 84
+  - 94
+  - 104
+  - 114
+num_layers:
+  - 2
+  - 4
+  - 8
+  - 16
+  - 32
+aggregation:
+  - add
+  - mean
+info_dim:
+  - 10
+struc_info:
+  - EigenValue
+  - EigenValuePCA
+  - EigenValueSorted
+  - SingularValue
+  - SingularValuePCA
+  - SingularValueSorted
+  - FiedlerValue
+  - FiedlerValueSorted
