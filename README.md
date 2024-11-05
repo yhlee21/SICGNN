@@ -31,9 +31,9 @@ torch-spline-conv : 1.2.1
 ### Launch Experiments
 `python Launch_Experiments.py --config-file <config> --dataset-name <name> --result-folder <result-folder> --debug`
 
-The experiment is performed on the <name> dataset with the model name <config>, and the results are saved in <result-folder>.
+The experiment is performed on the `<name>` dataset with the model name `<config>`, and the results are saved in `<result-folder>`.
 
 ## Note
-This code was adapted from and modified based on the code in the paper by Errica et al. below.
+This code was adapted and modified from the code in the paper by Errica et al. below.
 
-[Federico Errica, Marco Podda, Davide Bacciu, Alessio Micheli: A Fair Comparison of Graph Neural Networks for Graph Classification. Proceedings of the 8th International Conference on Learning Representations (ICLR 2020).](https://openreview.net/pdf?id=HygDF6NFPB)
+[Federico Errica, Marco Podda, Davide Bacciu, Alessio Micheli: A Fair Comparison of Graph Neural Networks for Graph Classification.](https://openreview.net/pdf?id=HygDF6NFPB) *Proceedings of the 8th International Conference on Learning Representations (ICLR 2020)*
